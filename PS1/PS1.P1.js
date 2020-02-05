@@ -7,9 +7,9 @@
 
 const letters = word => 
     { 
-        // 
         let chars = word.split('').sort();
-    chars = chars.filter((a, b) => chars.indexOf(a) === b).join()
+    chars = chars.filter((a, b) => chars.indexOf(a) === b).join();
     return chars
 }
-console.log(`All letters in string is: ${letters('supercalifragilisticexpialidocious')}`) 
+
+console.log(`All letters in string is: ${letters('supercalifragilisticexpialidocious')}`);
