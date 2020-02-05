@@ -45,9 +45,11 @@ let result2 = inputf("supercalifragilisticexpialidocious", breakAtA => {
         numberReplaced: numReplaced,
         length: length
       };
-      
+
     return retobj
     })
+
+    
 console.log(result1) 
 console.log(result2) 
 // const baz = ('supercalifragilisticexpialidocious', inputf) => inputf()
