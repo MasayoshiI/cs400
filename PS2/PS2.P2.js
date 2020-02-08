@@ -11,14 +11,14 @@
 function *wordsFromSentence(sentence) {
     // create an array of words using string split with " "
     let splitted = sentence.split(" ");
-    while (true) {
+    while (splitted.length != 0) {
         // use string shift to obtain the first
         yield splitted.shift()
     }
 }
 // TEST wordsFromSentence generator by printing out every word from the sentence
 wordGen = wordsFromSentence("All I know is something like a bird within her sang");
-count = 11;
-while (count --> 0) {
- console.log(wordGen.next().value)
-} 
+
+for (word of wordGen) {
+    console.log(word)
+   } 
