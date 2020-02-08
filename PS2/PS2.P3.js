@@ -7,8 +7,8 @@
 
 // A function that returns cube of an input x
 function cube(x) {
-    return Math.pow(x,3)
+    console.log(Math.pow(x,3))
 }
 
-console.log([1,2,3,4,5,6,7].map(x => cube(x)));
+[1,2,3,4,5,6,7].map(x => cube(x));
 
